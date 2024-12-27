@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+      background-image: url(./images/samsung-memory-ow8IIlkzbUw-unsplash\ \(1\).jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .login-container {
+      position: absolute;
+      bottom: 10px; /* لجعل الحاوية في أسفل الصفحة */
+      left: 95px; /* محاذاة الحاوية لليسار */
+     
+      padding: 20px 30px;
+      border-radius: 8px;
+      /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+      width: 300px;
+      text-align: left; /* محاذاة الحقول لليسار */
+    }
+
+    .login-container img {
+      width: 100px; /* حجم الشعار */
+      height: auto;
+      margin: 0 auto 10px auto;
+      display: block;
+    }
+
+    .login-container h1 {
+      margin: 0;
+      color: #333;
+    }
+
+    .login-container input {
+      width: 81%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 15px; /* مسافة بين الحقول */
+    }
+
+    .login-container button {
+      width: 22%;
+      padding: 10px;
+      background-color: #ad731b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 200px; 
+      
+    }
+
+    .login-container button:hover {
+      background-color:  #c77700;
+    }
+
+    .login-container a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .login-container {
+        width: 90%;
+        padding: 15px 20px;
+      }
+
+      .login-container h1 {
+        font-size: 20px;
+      }
+
+      .login-container input,
+      .login-container button {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .login-container {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .login-container h1 {
+        font-size: 18px;
+      }
+
+      .login-container input,
+      .login-container button {
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      .login-container a {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="./images/download.png" alt="University Logo">
+    <!-- <h1>Login</h1> -->
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <!-- <a href="#">Forgot Password?</a> -->
+  </div>
+</body>
+</html>
