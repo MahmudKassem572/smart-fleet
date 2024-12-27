@@ -13,10 +13,27 @@
       height: 100vh;
       margin: 0;
       position: relative;
-      background-image: url(./images/samsung-memory-ow8IIlkzbUw-unsplash\ \(1\).jpg);
+     
+    }
+    .home {
+    width: 100%;
+    height: 640px;
+    background-image: url(./images/samsung-memory-ow8IIlkzbUw-unsplash\ \(1\).jpg);
       background-size: cover;
       background-repeat: no-repeat;
-    }
+    position: relative;
+}
+
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    
+}
+
 
     .login-container {
       position: absolute;
@@ -54,18 +71,19 @@
     .login-container button {
       width: 22%;
       padding: 10px;
-      background-color: #ad731b;
-      color: white;
+      background-color: rgb(116, 67, 16);
+      color: rgb(0, 0, 0);
       border: none;
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
       margin-left: 200px; 
+    
       
     }
 
     .login-container button:hover {
-      background-color:  #c77700;
+      background-color:  rgba(116, 67, 16, 0.4);;
     }
 
     .login-container a {
@@ -118,8 +136,10 @@
   </style>
 </head>
 <body>
+    <div class="home">
+        <div class="home-overlay">
   <div class="login-container">
-    <img src="./images/download.png" alt="University Logo">
+    <!-- <img src="./images/download.png" alt="University Logo"> -->
     <!-- <h1>Login</h1> -->
     <form>
       <input type="text" placeholder="Username" required>
@@ -127,6 +147,8 @@
       <button type="submit">Login</button>
     </form>
     <!-- <a href="#">Forgot Password?</a> -->
+     </div><!-- ovrrlay -->
+     </div><!-- home -->
   </div>
 </body>
 </html>
